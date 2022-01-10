@@ -1,0 +1,86 @@
+.grid{
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-areas: 
+  'Bedroom1 Bedroom1 LivingRoom LivingRoom Kitchen'
+  'Bedroom1 Bedroom1 LivingRoom LivingRoom Kitchen'
+  'FullBath FullBath LivingRoom LivingRoom Kitchen'
+  'Bedroom2 Bedroom2 HalfBath Bedroom3 Bedroom3'
+  'Bedroom2 Bedroom2 HalfBath Bedroom3 Bedroom3';
+}
+.Kitchen{
+  display: grid;
+  grid-area: Kitchen;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
+  grid-template-areas: 
+  'Oven Sink'
+  'Kitchen2 Kitchen2';
+  background-color: coral;
+}
+#Kitchen2{
+  grid-area: Kitchen2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Oven{
+  grid-area: Oven;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Sink{
+  grid-area: Sink;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Bedroom1{
+  grid-area: Bedroom1;
+  background-color: blue;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Bedroom2{
+  grid-area: Bedroom2;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Bedroom3{
+  grid-area: Bedroom3;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#LivingRoom{
+  grid-area: LivingRoom;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#FullBath{
+  grid-area: FullBath;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#HalfBath{
+  grid-area: HalfBath;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
