@@ -1,1 +1,8 @@
-
+#flex{
+  display: flex;
+  
+}
+#person{
+  border: solid 5px red;
+  margin: 5px;
+}
