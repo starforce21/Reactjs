@@ -13,9 +13,13 @@ class App extends Component {
   getData = (infoFromForm) => {
       // this.setState({posts:this.state.posts.concat(post)})
       // console.log(this.state)
-      let arr=this.state.posts.slice()
-      arr.push(infoFromForm)
-      this.setState({posts:arr},()=>console.log(this.state))
+
+      // let arr=this.state.posts.slice()
+      // arr.push(infoFromForm)
+      // this.setState({posts:arr},()=>console.log(this.state))
+
+      this.setState({posts:[...this.state.posts,infoFromForm]})
+
   };
   render() {
     return (
