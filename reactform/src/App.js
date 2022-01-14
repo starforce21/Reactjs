@@ -25,6 +25,7 @@ class App extends Component {
     return (
       <div>
         <Form x={this.state} getData={this.getData}/>
+        {console.log(this.state)}
         <BlogPosts data1={this.state} /> 
       </div>
     );
