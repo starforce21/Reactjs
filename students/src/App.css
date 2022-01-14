@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  
+}
+#box{
+    border: cadetblue 1px solid; 
+    margin: 50px;
+    background-color: cornsilk;
+}
+
