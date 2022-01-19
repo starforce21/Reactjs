@@ -20,7 +20,7 @@ function ShipList() {
                 setPage(moreData.next)
                 // setData(prevData=>prevData.concat(moreData.results))
                 setData(prevData=>{
-                    return [...prevData,moreData.results]
+                    return [...prevData,...moreData.results]
                 })
             })
             .catch(error=>console.log(error))
