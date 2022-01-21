@@ -2,10 +2,8 @@ import { useState } from "react";
 
 function Questions(props) {
   const [status, setStatus] = useState(false);
-  console.log(status);
   const reveal = () => {
     setStatus((prevStatus) => !prevStatus);
-    console.log(status);
   };
   const Decrease = () => {
     props.Decrease(props.data.value);
