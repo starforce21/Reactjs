@@ -4,7 +4,7 @@ import Questions from "./Questions";
 
 function App() {
   const [question, setQuestion] = useState([
-    { question: "none", category: "none" },
+    { question: "", category: ''},
   ]);
   const [questions, setQuestions] = useState([]);
   const [score, setScore] = useState(0);
