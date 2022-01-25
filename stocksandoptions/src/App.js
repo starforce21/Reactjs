@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { MarketState } from "./contexts/MarketState";
+import MarketData from "./components/MarketData"
+
 
 function App() {
   return (
-
-    </div>
+    <MarketState>
+      <MarketData />
+    </MarketState>
   );
 }
+
 
 export default App;
