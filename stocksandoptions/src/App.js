@@ -10,6 +10,7 @@ import Microsoft from "./components/Microsoft";
 import Tesla from "./components/Tesla";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
+import "./App.css";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <Nav/>
     <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='home' element={<Home />}/>
         <Route path='/amazon' element={<Amazon />}/>
         <Route path='/apple' element={<Apple />}/>
         <Route path='/facebook' element={<Facebook />}/>

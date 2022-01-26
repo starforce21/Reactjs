@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.Nav{
+    background-color: cyan;
+    display: block;
+    color: rgb(66, 50, 205);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.Nav_wrapper{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.Nav_item{
+    float: left;
+    display: block;
+    padding: 8px;
+}
+.homepage{
+    text-align: center;
+}
+.marketdata{
+    color:white
+}
+.marketdata p{
+ font-size: larger;
+}
