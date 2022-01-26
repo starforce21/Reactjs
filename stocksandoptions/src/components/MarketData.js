@@ -9,8 +9,8 @@ const MarketData = () => {
 
 
   
-  const getInfoHandler =() => {
-    getData(stateDispatch);
+  const getInfoHandler =async() => {
+    await getData(stateDispatch);
     setLoading(stateDispatch, false);
   };
 
@@ -23,44 +23,45 @@ const MarketData = () => {
     <div>
       {loading && <p>Loading...</p>}
       {error && <p>{message}</p>}
+      {console.log(data)}
       <div>
         <div>
-          SPY(S&P): {data[0].c}
+          SPY(S&P): {data[0].data.c}
         </div>
         <div>
-          {data[0].dp}{data[0].d}
+        <p style={data[0].data.d>0 ? {color: "green"}:{color: "red"}}>{Math.round(data[0].data.dp*100)/100}%({data[0].data.d})</p>
         </div>
       </div>
       <div>
         <div>
-          QQQ(Nasdaq 100): {data[1].c}
+          QQQ(Nasdaq 100): {data[1].data.c}
         </div>
         <div>
-          {data[1].dp}{data[1].d}
-        </div>
-      </div>
-      <div>
-        <div>
-          DIA(DJI Average): {data[2].c}
-        </div>
-        <div>
-          {data[2].dp}{data[2].d}
+        <p style={data[1].data.d>0 ? {color: "green"}:{color: "red"}}>{Math.round(data[1].data.dp*100)/100}%({data[1].data.d})</p>
         </div>
       </div>
       <div>
         <div>
-          VEA(Developed Markets): {data[3].c}
+          DIA(DJI Average): {data[2].data.c}
         </div>
         <div>
-          {data[3].dp}{data[3].d}
+        <p style={data[2].data.d>0 ? {color: "green"}:{color: "red"}}>{Math.round(data[2].data.dp*100)/100}%({data[2].data.d})</p>
         </div>
       </div>
       <div>
         <div>
-          VWO(Emerging Markets): {data[4].c}
+          VEA(Developed Markets): {data[3].data.c}
         </div>
         <div>
-          {data[4].dp}{data[4].d}
+        <p style={data[3].data.d>0 ? {color: "green"}:{color: "red"}}>{Math.round(data[3].data.dp*100)/100}%({data[3].data.d})</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          VWO(Emerging Markets): {data[4].data.c}
+        </div>
+        <div >
+          <p style={data[4].data.d>0 ? {color: "green"}:{color: "red"}}>{Math.round(data[4].data.dp*100)/100}%({data[4].data.d})</p>
         </div>
       </div>
     </div>

@@ -26,6 +26,7 @@ export const getData = async dispatch => {
   .then(res => {
     console.log(res)
       const result = res;
+      console.log(result)
 
       // set user info
       dispatch({

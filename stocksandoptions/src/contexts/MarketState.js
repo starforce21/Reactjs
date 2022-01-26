@@ -9,7 +9,7 @@ export const useData = () => {
 
 export const MarketState = ({ children }) => {
   const initialState = {
-    data: {},
+    data: [{data:''},{data:''},{data:''},{data:''},{data:''}],
     loading: false,
     error: false,
     message: ""

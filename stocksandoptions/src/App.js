@@ -9,6 +9,7 @@ import Google from "./components/Google";
 import Microsoft from "./components/Microsoft";
 import Tesla from "./components/Tesla";
 import Home from "./components/Home";
+import Nav from "./components/Nav";
 
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
     <div className="App">
     <MarketState>
       <MarketData />
-      <Home />
     </MarketState>
+    <Nav/>
     <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/amazon' element={<Amazon />}/>
