@@ -1,19 +1,15 @@
 import React, { useEffect } from "react";
 import { useData } from "../contexts/MarketState";
-import { getData, setLoading } from "../contexts/DataAction";
+import { getData} from "../contexts/DataAction";
 
 
 const MarketData = () => {
   const [ state, stateDispatch] = useData();
-  const { data, loading, error, message } = state;
-
-
+  const { data } = state;
   
   const getInfoHandler =async() => {
     await getData(stateDispatch);
-    setLoading(stateDispatch, false);
   };
-
 
   useEffect(() => {
     getInfoHandler();
@@ -21,9 +17,6 @@ const MarketData = () => {
 
   return (
     <div className="header">
-      {loading && <p>Loading...</p>}
-      {error && <p>{message}</p>}
-      {console.log(data)}
       <div className="marketdata">
         <div>
           SPY(S&P): {data[0].data.c}
