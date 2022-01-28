@@ -4,7 +4,7 @@
     background-color: black;
 }
 .Nav{
-    background-color: cyan;
+    background-color: rgb(229, 255, 0);
     display: block;
     color: rgb(66, 50, 205);
     text-align: center;
@@ -27,10 +27,41 @@
 }
 .homepage{
     text-align: center;
+    font-size: larger;
 }
 .marketdata{
     color:white
 }
 .marketdata p{
  font-size: larger;
+}
+.App{
+    background-color: #bfb9df;
+    height: 100vh;
+    overflow: scroll;
+}
+.tableTitle{
+    text-align: center;
+    color: #46c4fa;
+}
+.stockTable{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+td,tr,th{
+    border: 1px solid black;
+    font-size: larger;
+}
+.DataBox{
+    background-color: rgb(241, 167, 140);
+    margin: 1rem;
+    padding: 30px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
