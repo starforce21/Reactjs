@@ -7,7 +7,7 @@ function Amazon() {
   useEffect(() => {
     axios
       .get(
-        "https://api.polygon.io/v2/aggs/ticker/AMZN/range/1/day/2022-01-02/2022-01-24?adjusted=true&sort=asc&limit=120&apiKey=IbzW4PY8wxkA11GpBtVXPheMvKtGneHK"
+        "https://api.polygon.io/v2/aggs/ticker/AMZN/range/1/day/2022-01-02/2022-01-31?adjusted=true&sort=asc&limit=120&apiKey=IbzW4PY8wxkA11GpBtVXPheMvKtGneHK"
       )
       .then((res) => {
         console.log(res); 
